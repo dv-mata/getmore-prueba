@@ -1,0 +1,19 @@
+  <header>
+      <a href="#" class="logo">
+          <img src="{{ 'assets/img/logo.svg' | asset_url }}" alt="Logo" />
+      </a>
+      <div class="menu-links-container">
+          <nav>
+              <ul class="menu-links">
+                  {% for link in site.navigation_links %}
+                      <li><a href="{{ link.url }}" class="{% if link.active %}active{% endif %}">{{ link.title }}</a></li>
+                  {% endfor %}
+              </ul>
+          </nav>
+          <div class="language-select">
+              <a href="#" class="active">ES</a>
+              <a href="#">EN</a>
+          </div>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">🍔</button>
+  </header>

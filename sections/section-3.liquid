@@ -1,0 +1,45 @@
+
+<section class="section-3">
+    <div class="slider-left-container">
+        <img src="{{ 'assets/img/ball-color-court-1405355.webp' | asset_url }}" alt="Tennis Ball" />
+        <div class="swiper productLeftSwiper">
+            <div class="swiper-wrapper">
+                {% for i in (1..4) %}
+                <div class="swiper-slide-content swiper-slide">
+                    <div class="slider-left-content__slide">
+                        <h2>Nuestras <strong>Raquetas</strong></h2>
+                        <p>Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-arrows-wrapper">
+                <div class="swiper-arrow swiper-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="13" viewBox="0 0 9 13">
+                        <path fill="#FFF" fill-rule="nonzero" d="M0 0v13l9-6.5z" />
+                    </svg>
+                </div>
+                <div class="swiper-arrow swiper-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="13" viewBox="0 0 9 13">
+                        <path fill="#FFF" fill-rule="nonzero" d="M0 0v13l9-6.5z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-right-container">
+        <div class="swiper productsSwiper">
+            <div class="swiper-wrapper">
+                {% for i in (1..6) %}
+                <div class="swiper-slide">
+                    <span>{{ i }}</span>
+                    <img loading="lazy" src="{{ 'assets/img/tennis-10@3x.webp' | asset_url }}" alt="Tennis racket" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

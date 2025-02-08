@@ -1,0 +1,19 @@
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content__left">
+                <nav>
+                    <ul>
+                        {% for link in site.navigation_links %}
+                            <li><a href="{{ link.url }}" class="{% if link.active %}active{% endif %}">{{ link.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-content__right">
+                <a href="/">
+                    <img src="{{ 'assets/img/logo.svg' | asset_url }}" alt="Logo" />
+                </a>
+            </div>
+        </div>
+    </footer>
