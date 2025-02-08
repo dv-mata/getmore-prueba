@@ -462,6 +462,7 @@ footer .footer-content__right img {
 @media (max-width: 992px) {
   .section-2 {
     flex-direction: column;
+    padding-top: 67px;
   }
 }
 .section-2__category-label {

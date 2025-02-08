@@ -81,6 +81,7 @@
 
     @include media(lg) {
         flex-direction: column;
+        padding-top: 67px;
     }
 
     &__category-label {
