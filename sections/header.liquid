@@ -5,9 +5,10 @@
       <div class="menu-links-container">
           <nav>
               <ul class="menu-links">
-                  {% for link in site.navigation_links %}
-                      <li><a href="{{ link.url }}" class="{% if link.active %}active{% endif %}">{{ link.title }}</a></li>
-                  {% endfor %}
+                  <li><a class="active" href="#inicio">Inicio</a></li>
+                  <li><a href="#nosotros">Acerca de nosotros</a></li>
+                  <li><a href="#historia">Historia</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
               </ul>
           </nav>
           <div class="language-select">
@@ -16,4 +17,12 @@
           </div>
       </div>
       <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">🍔</button>
+      <div id="dropdown" class="dropdown">
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Acerca de nosotros</a></li>
+              <li><a href="#">Historia</a></li>
+              <li><a href="#">Contacto</a></li>
+          </ul>
+      </div>
   </header>
