@@ -398,6 +398,11 @@ footer .footer-content__right img {
   background-color: var(--white);
   height: 101vh;
 }
+@media (max-width: 992px) {
+  .hero-homepage__content:before {
+    display: none;
+  }
+}
 .hero-homepage__content img {
   position: absolute;
   left: 0;

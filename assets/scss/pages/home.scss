@@ -15,6 +15,10 @@
             width: 2px;
             background-color: var(--white);
             height: 101vh;
+
+            @include media(lg) {
+              display: none;  
+            }
         }
 
         img {
